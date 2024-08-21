@@ -1,0 +1,131 @@
+.alatsi-regular {
+    font-family: "Alatsi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+*{
+    font-family: Alatsi, sans-serif;
+}  
+
+
+body {
+    margin: 0;
+    font-family: Alatsi, sans-serif;
+    background-color:  #19283b;
+  }
+  
+  header {
+    color: #fff;
+    padding: 15px 30px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 100px;
+    margin-right: 5px;
+  }
+  
+  .site-name {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  .nav-links, .links-form {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .links-form a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+  }
+  .links-form li{
+    margin: 0 10px;
+
+  }
+  
+  .nav-links a:hover {
+    color: #ccc;
+  }
+
+  .nav-links-container, .formulario {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+
+  .informacion{
+    position: static;
+    top: 15%;
+    color: white;
+    margin-left: 10%;
+  }
+
+  .informacion p{
+    width: 480px;
+    margin-bottom: 50px;
+  }
+
+ .informacion h1{
+    width: 480px;
+    font-size: 80px;
+    margin-bottom: 0px;
+ }
+
+ .start{
+    background-color: #60a0b8;
+    color: white;
+    border: none;
+    padding: 18px 50px;
+    border-radius: 25px;
+    cursor: context-menu;
+ }
+
+ .informacion .up{
+    width: 480px;
+    font-size: 60px;
+    margin-bottom: 0px;
+ }
+
+ .informacion .down{
+    width: 800px;
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #83d7c1;
+ }
+
+.imagenes{
+    right: 10px;
+    position: absolute;
+    top: 20%;
+}
+.imagenes img{
+    height: 600px;
+}
+ 
