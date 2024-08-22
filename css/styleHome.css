@@ -103,7 +103,7 @@ body {
     border: none;
     padding: 18px 50px;
     border-radius: 25px;
-    cursor: context-menu;
+    cursor: pointer;
  }
 
  .informacion .up{
