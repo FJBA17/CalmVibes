@@ -1,73 +1,129 @@
 /* Reset some default styles */
+
+
+.alatsi-regular {
+  font-family: "Alatsi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  font-family: Alatsi, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(/assets/images/fondo.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+
+/* Container styles */
+.container {
+  background: transparent;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 100%;
+  /* height: 350px; */
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid #83d7c1;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  justify-content: center;
+  color: white;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #83d7c1;
+  color: #19283b;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+button:hover{
+  background-color: #19283b;
+  color: #83d7c1;
+  transition: 0.5s;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  /* Ajusta la distancia desde la parte superior */
+  left: 50px;
+  /* Ajusta la distancia desde la izquierda */
+  cursor: pointer;
+  width: 50px;
+  /* Ajusta el tamaño de la imagen */
+  height: auto;
+}
+
+.sinCuenta{
+  color: white;
+  padding-bottom: 10px;
+  transition: 0.5s;
+  
+}
+
+.sinCuenta:hover{
+  text-shadow: rgba(131,215,193,0.9) 0px 0px 18px;
+  transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+  
+  .back-button{
+    display: none;
   }
   
-  /* Body styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Container styles */
-  .container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  /* Form styles */
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .password-input {
-    position: relative;
-  }
-  
-  .password-input .toggle-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 767px) {
-    .container {
-      padding: 20px;
-    }
-  }
+}
+

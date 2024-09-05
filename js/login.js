@@ -1,28 +1,28 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Toggle password visibility
-    const togglePasswordBtn = document.querySelector('.toggle-password');
-    const passwordInput = document.getElementById('password');
-  
-    togglePasswordBtn.addEventListener('click', function() {
-      if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        togglePasswordBtn.classList.remove('fa-eye');
-        togglePasswordBtn.classList.add('fa-eye-slash');
-      } else {
-        passwordInput.type = 'password';
-        togglePasswordBtn.classList.remove('fa-eye-slash');
-        togglePasswordBtn.classList.add('fa-eye');
-      }
-    });
-  
-    // Form submission
-    const loginForm = document.getElementById('loginForm');
-  
-    loginForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-      // Add your login logic here
-      console.log('Username:', loginForm.username.value);
-      console.log('Password:', loginForm.password.value);
-      // You can perform authentication and redirect the user to the desired page
-    });
-  });
+function validateLogin() {
+  const username = document.getElementById('username').value.trim();
+  const password = document.getElementById('password').value.trim();
+  const errorMessage = document.getElementById('error-message');
+
+  // Limpiar mensaje de error
+  errorMessage.style.display = 'none';
+
+  // Obtener las credenciales guardadas en localStorage
+  const storedUsername = localStorage.getItem('username');
+  const storedPassword = localStorage.getItem('password');
+
+  // Validar credenciales
+  if (username === storedUsername && password === storedPassword) {
+      alert('Login successful');
+      // Redirigir a la página de inicio
+      window.location.href = '../html/inicio.html';
+      return false; // Previene el envío del formulario, ya que manejamos la redirección manualmente
+  } else {
+      errorMessage.style.display = 'block';
+      errorMessage.textContent = 'Invalid username or password';
+      return false; // Previene el envío del formulario
+  }
+}
+
+function goBack() {
+  window.history.back();
+}

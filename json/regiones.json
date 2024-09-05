@@ -1,0 +1,69 @@
+{
+    "regiones": [
+      {
+        "nombre": "Región de Arica y Parinacota",
+        "comunas": ["Arica", "Camarones", "Putre", "General Lagos"]
+      },
+      {
+        "nombre": "Región de Tarapacá",
+        "comunas": ["Iquique", "Alto Hospicio", "Pozo Almonte", "Huara", "Camiña", "Colchane", "Pica"]
+      },
+      {
+        "nombre": "Región de Antofagasta",
+        "comunas": ["Antofagasta", "Mejillones", "Taltal", "Sierra Gorda", "Calama", "Ollagüe", "San Pedro de Atacama"]
+      },
+      {
+        "nombre": "Región de Atacama",
+        "comunas": ["Copiapó", "Caldera", "Tierra Amarilla", "Chañaral", "Diego de Almagro", "Vallenar", "Huasco", "Freirina", "Alto del Carmen"]
+      },
+      {
+        "nombre": "Región de Coquimbo",
+        "comunas": ["La Serena", "Coquimbo", "Andacollo", "La Higuera", "Vicuña", "Ovalle", "Monte Patria", "Punitaqui", "Río Hurtado", "Combarbalá"]
+      },
+      {
+        "nombre": "Región de Valparaíso",
+        "comunas": ["Valparaíso", "Viña del Mar", "Concón", "Quilpué", "Villa Alemana", "Quillota", "Calera", "La Cruz", "Limache", "Olmué"]
+      },
+      {
+        "nombre": "Región Metropolitana de Santiago",
+        "comunas": ["Santiago", "Cerro Navia", "Huechuraba", "Independencia", "Maipú", "Ñuñoa", "Providencia", "Pudahuel", "Quilicura", "Quinta Normal"]
+      },
+      {
+        "nombre": "Región del Libertador General Bernardo O'Higgins",
+        "comunas": ["Rancagua", "Machalí", "Graneros", "Rengo", "San Fernando", "Santa Cruz", "Requínoa", "Coinco", "Coltauco", "Las Cabras"]
+      },
+      {
+        "nombre": "Región del Maule",
+        "comunas": ["Talca", "Curicó", "Linares", "Cauquenes", "Constitución", "Maule", "San Clemente", "Molina", "Río Claro", "Parral"]
+      },
+      {
+        "nombre": "Región de Ñuble",
+        "comunas": ["Chillán", "Bulnes", "Cobquecura", "Coihueco", "El Carmen", "Ninhue", "Pemuco", "Pinto", "Quillón", "Quirihue"]
+      },
+      {
+        "nombre": "Región del Biobío",
+        "comunas": ["Concepción", "Coronel", "Talcahuano", "San Pedro de la Paz", "Lota", "Hualpén", "Penco", "Tomé", "Chiguayante", "Santa Juana"]
+      },
+      {
+        "nombre": "Región de La Araucanía",
+        "comunas": ["Temuco", "Padre Las Casas", "Angol", "Victoria", "Villarrica", "Pucón", "Lautaro", "Freire", "Pitrufquén", "Gorbea"]
+      },
+      {
+        "nombre": "Región de Los Ríos",
+        "comunas": ["Valdivia", "Corral", "Lanco", "Los Lagos", "Máfil", "Mariquina", "Paillaco", "Panguipulli", "La Unión", "Río Bueno"]
+      },
+      {
+        "nombre": "Región de Los Lagos",
+        "comunas": ["Puerto Montt", "Puerto Varas", "Castro", "Ancud", "Quellón", "Fresia", "Frutillar", "Llanquihue", "Maullín", "Osorno"]
+      },
+      {
+        "nombre": "Región de Aysén del General Carlos Ibáñez del Campo",
+        "comunas": ["Coyhaique", "Aysén", "Cisnes", "Guaitecas", "Lago Verde", "Río Ibáñez", "Chile Chico", "O'Higgins", "Tortel"]
+      },
+      {
+        "nombre": "Región de Magallanes y de la Antártica Chilena",
+        "comunas": ["Punta Arenas", "Puerto Natales", "Porvenir", "Primavera", "Timaukel", "Torres del Paine", "Laguna Blanca", "Río Verde", "San Gregorio", "Antártica"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+        <link rel="stylesheet" href="/css/styleRegister.css">
+        <link rel="icon" type="image/x-icon" href="/assets/images/LogoIcon.png" />
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Registro</h2>
+            <form id="registrationForm" onsubmit="return registerUser()">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error" id="usernameError"></span>
+
+                <label for="rut">RUT:</label>
+                <input type="text" id="rut" name="rut" required>
+                <span class="error" id="rutError"></span>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+
+                <label for="region">Región:</label>
+                <select id="region" name="region" class="region" required>
+                    <option value disabled selected>Seleccione su
+                        región</option>
+                </select>
+                <span class="error" id="regionError"></span>
+
+                <label for="comuna">Comuna:</label>
+                <select id="comuna" name="comuna" class="comuna" required>
+                    <option value disabled selected>Seleccione su
+                        comuna</option>
+                </select>
+                <span class="error" id="comunaError"></span>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="passwordError"></span>
+
+                <label for="confirmPassword">Confirmar Contraseña:</label>
+                <input type="password" id="confirmPassword"
+                    name="confirmPassword" required>
+                <span class="error" id="confirmPasswordError"></span>
+                <a href="/html/login.html" class="conCuenta">Ya tienes cuenta?</a>
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    Acepto los términos y condiciones
+                </label>
+                <span class="error" id="termsError"></span>
+
+                
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <img src="/assets/icon/back.svg" alt="Volver" class="back-button"
+            onclick="goBack()">
+        <script src="/js/register.js"></script>
+    </body>
+</html>

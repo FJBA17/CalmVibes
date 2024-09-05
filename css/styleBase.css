@@ -1,0 +1,232 @@
+.alatsi-regular {
+  font-family: "Alatsi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: Alatsi, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: inherit;
+}
+
+header {
+  color: #fff;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 70px;
+}
+
+/* .site-name {
+  margin: 0;
+  font-size: 25px;
+} */
+
+.site-name{
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, white, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 25px;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px white;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px white;
+  }
+}
+
+.search-container{
+  display: flex;
+  float: left;
+  /* margin-left: 100px; */
+  height: 35px;
+}
+
+.search-container input[type="text"]{
+  width: 400px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+  transition: 0.5s;
+  text-indent: 20px;
+}
+
+.search-container input[type="text"]:focus {
+   /* Ajusta este valor según necesites */
+  transition: 0.5s;
+}
+
+body {
+  margin: 0;
+  font-family: inherit;
+  background-image: url(/assets/images/fondoInicio3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Menú lateral */
+.sidebar {
+  position: fixed;
+
+  top: 70px; /* Para que quede justo debajo del navbar */
+  left: 0;
+  width: 200px;
+  height: calc(100vh - 70px); /* Para que ocupe toda la altura de la ventana, restando el navbar */
+  background : transparent;
+  backdrop-filter: blur(5px);
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin: 25px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+
+.sidebar ul li a img {
+  width: 30px; /* Ajusta el tamaño de la imagen según tu necesidad */
+  height: 30px;
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.sidebar ul li a:hover {
+  background-color: #83d7c1;
+  border-radius: 15px;
+  color: #19283b;
+}
+
+/* Contenido principal */
+.content {
+  margin-left: 220px; /* Para dejar espacio al menú lateral */
+  padding: 70px;
+}
+
+h1 {
+  color: #333;
+}
+.user-info {
+  margin-left: auto; /* Empuja el contenido a la esquina derecha */
+  font-size: 14px;
+  color: white;
+}
+
+#cerrarSesion {
+  background: none; /* Elimina el fondo del botón */
+  border: none; /* Elimina el borde del botón */
+  padding: 0; /* Elimina el relleno del botón */
+  cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+  display: flex; /* Asegura que el botón se ajuste al tamaño de la imagen */
+  margin-right: 40px;
+}
+
+#cerrarSesion img {
+  display: block; /* Elimina el espacio adicional debajo de la imagen */
+  border: none;
+  width: 35px; /* Asegura que no haya borde alrededor de la imagen */
+}
+
+
+@media (max-width: 1000px) {
+  .site-name {
+    display: none;
+    transition: 0.5s;
+  }
+
+  nav {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+  }
+  .menu-text {
+    display: none;
+  }
+
+  .sidebar{
+    width: 60px;
+  }
+  ul{
+    padding: 0;
+  }
+
+  .content {
+    margin-left: 80px; /* Para dejar espacio al menú lateral */
+    padding: 10px;
+    padding-top: 70px;
+  }
+  .logo {
+    height: 60px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .search-container input[type="text"]{
+    width: 300px;
+    
+  }
+}

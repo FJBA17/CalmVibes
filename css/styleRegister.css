@@ -1,0 +1,115 @@
+.alatsi-regular {
+    font-family: "Alatsi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: Alatsi, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    background-image: url(/assets/images/fondo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #83d7c1;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #83d7c1;
+    color: #19283b;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #19283b;
+    color: #83d7c1;
+    transition: 0.5s;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    /* Ajusta la distancia desde la parte superior */
+    left: 50px;
+    /* Ajusta la distancia desde la izquierda */
+    cursor: pointer;
+    width: 50px;
+    /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+.conCuenta{
+    color: white;
+    padding-bottom: 10px;
+    float: right;
+  }
+
+.region,
+.comuna{
+    border-radius: 10px;
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+@media (max-width: 1000px) {
+  
+    .back-button{
+      display: none;
+    }
+    
+  }
