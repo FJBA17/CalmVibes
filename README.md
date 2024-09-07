@@ -1,10 +1,8 @@
-## Nombre del Proyecto
+## CalmVibes
 ## Descripción
 CalmVibes es una innovadora aplicación web diseñada para ofrecer una experiencia de música y video personalizada que se centra en el bienestar y la relajación del usuario. La plataforma permite a los usuarios explorar, crear y gestionar listas de reproducción, así como descubrir contenido multimedia que fomente una atmósfera tranquila y positiva.
 
 ## Análisis de las Funcionalidades
-
-Claro, aquí tienes una descripción breve de cada una de las 7 funcionalidades para el proyecto CalmVibes:
 
 1. **Reproducir Contenido Audiovisual**:
    La aplicación permite a los usuarios reproducir tanto música como videos directamente desde la plataforma. Los usuarios pueden controlar la reproducción, pausar, adelantar y retroceder el contenido, así como ajustar el volumen y ver el progreso de la reproducción.
@@ -25,7 +23,7 @@ Claro, aquí tienes una descripción breve de cada una de las 7 funcionalidades 
    Los usuarios pueden subir su propio contenido audiovisual a la plataforma utilizando un botón específico para esta acción. Esto les permite compartir sus canciones y videos con otros usuarios, enriqueciendo la biblioteca de contenido disponible en CalmVibes.
 
 ## Tecnologías Usadas
-HTML
-CSS
-JavaScript
-JSON
+![HTML](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=white&color=orange)
+![CSS](https://img.shields.io/badge/CSS-blue?logo=css3&logoColor=white&color=blue)
+![JAVASCRIPT](https://img.shields.io/badge/JavaScript-black?logo=javascript&logoColor=black&color=yellow)
+![JSON](https://img.shields.io/badge/JSON-black?logo=json&logoColor=white&color=black)
