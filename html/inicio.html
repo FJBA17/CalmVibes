@@ -12,106 +12,106 @@
     </head>
     <body>
 
-        <div class="content">
+        <div class="content" style="width:75%" id="conte">
             <h1 class="titulo">Recomendaciones para hoy</h1>
             <div class="musica">
                 <div class="cuadro1">
                     <div class="tituloimg">
-                        <img src="/assets/icon/music1.jpg" alt="" id="open-player">
+                        <img  src="/assets/icon/music1.jpg" id="boton">
                         <p>Titulo Cancion</p>
                         <p class="autor">Autor</p>
-                    </div>   
+                    </div>
                 </div>
                 <div class="cuadro1">
                     <div class="tituloimg">
-                        <img src="/assets/icon/music2.jpg" alt="">
+                        <img src="/assets/icon/music2.jpg" id="boton">
                         <p>Titulo Cancion</p>
                         <p class="autor">Autor</p>
-                    </div>   
+                    </div>
                 </div>
                 <div class="cuadro1">
                     <div class="tituloimg">
-                        <img src="/assets/icon/music3.jpg" alt="">
+                        <img src="/assets/icon/music3.jpg" id="boton">
                         <p>Titulo Cancion</p>
                         <p class="autor">Autor</p>
-                    </div>   
+                    </div>
                 </div>
                 <div class="cuadro1">
                     <div class="tituloimg">
-                        <img src="/assets/icon/music4.jpg" alt="">
+                        <img src="/assets/icon/music4.jpg" id="boton">
                         <p>Titulo Cancion</p>
                         <p class="autor">Autor</p>
-                    </div>   
+                    </div>
                 </div>
                 <div class="cuadro1">
                     <div class="tituloimg">
-                        <img src="/assets/icon/music5.jpg" alt="">
+                        <img src="/assets/icon/music5.jpg" alt>
                         <p>Titulo Cancion</p>
                         <p class="autor">Autor</p>
-                    </div>   
+                    </div>
                 </div>
-                
+
             </div>
             <h1 class="titulo">Ejercicios</h1>
             <div class="videos">
                 <div class="cuadro1">
                     <div class="titulovid">
-                        <img src="/assets/icon/video1.jpg" alt="">
+                        <img src="/assets/icon/video1.jpg" alt>
                         <p>Titulo Video</p>
                         <p class="autor">Autor</p>
-                    </div>   
+                    </div>
                 </div>
                 <div class="cuadro1">
                     <div class="titulovid">
-                        <img src="/assets/icon/video2.jpg" alt="">
+                        <img src="/assets/icon/video2.jpg" alt>
                         <p>Titulo Video</p>
                         <p class="autor">Autor</p>
-                    </div>   
+                    </div>
                 </div>
                 <div class="cuadro1">
                     <div class="titulovid">
-                        <img src="/assets/icon/video3.jpg" alt="">
+                        <img src="/assets/icon/video3.jpg" alt>
                         <p>Titulo Video</p>
                         <p class="autor">Autor</p>
-                    </div>   
+                    </div>
                 </div>
             </div>
-            <h1 class="titulo">Tips</h1>
-            
+        </div>
+        <div class="modal-music" id="myModal">
+            <div class="content-modal" id="miModal">
+                <span class="close">&times;</span>
+                <div class="imagen-musica">
+                    <img src="/assets/icon/music1.jpg" alt>
+                </div>
+            </div>
+            <div class="music-player">
+                <img src="/assets/icon/music1.jpg" alt="Cover" class="cover">
+                <div class="song-info">
+                    <span class="song-title">Nombre de la Canción</span>
+                    <span class="song-artist">Artista</span>
+                </div>
+                <div class="controls">
+                    <button class="prev-btn"><img src="/assets/icon/prev.svg" alt=""></button>
+                    <button class="play-btn"><img src="/assets/icon/play.svg" alt=""></button>
+                    <button class="next-btn"><img src="/assets/icon/next.svg" alt=""></button>
+                </div>
+                <div class="progress-bar">
+                    <span class="current-time">0:00</span>
+                    <div class="progress">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="total-time">3:45</span>
+                </div>
+                <button class="likes" title="Like"><img src="/assets/icon/like.svg" alt=""></button>
+                <button class="likes" title="No Like"><img src="/assets/icon/nolike.svg" alt=""></button>
+                <button class="favorito" id="favorite" title="Favoritos"><img src="/assets/icon/favorite.svg" alt=""></button>
+                <div class="volume-control">
+                    <img src="/assets/icon/volumen.svg" alt=""><input type="range" min="0" max="100" value="50" class="volume-slider">
+                </div>
+            </div>
 
         </div>
-        <div class="music-player">
-            <img src="/assets/icon/music1.jpg" alt="Cover" class="cover">
-            <div class="song-info">
-                <span class="song-title">Titulo Canción</span>
-                <span class="song-artist">Autor</span>
-            </div>
-            <div class="controls">
-                <button class="prev-btn">
-                    <img src="/assets/icon/prev.svg" alt="">
-                </button>
-                <button class="play-btn">
-                    <img src="/assets/icon/play.svg" alt="">
-                </button>
-                <button class="next-btn">
-                    <img src="/assets/icon/next.svg" alt="">
-                </button>
-            </div>
-            <div class="progress-bar">
-                <span class="current-time">0:00</span>
-                <div class="progress">
-                    <div class="progress-fill"></div>
-                </div>
-                <span class="total-time">3:45</span>
-            </div>
-            <button class="favorite" id="favorite">
-                <img src="/assets/icon/favorite.svg" alt="">
-            </button>
-            <div class="volume-control">
-                <img src="/assets/icon/volumen.svg" alt=""><input type="range" min="0" max="100" value="50" class="volume-slider">
-            </div>
-        </div>
-        
+        <!-- REPRODUCTOR BAJO -->
 
     </body>
 </html>

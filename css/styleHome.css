@@ -1,3 +1,4 @@
+/* Tipografía */
 .alatsi-regular {
   font-family: "Alatsi", sans-serif;
   font-weight: 400;
@@ -15,73 +16,89 @@ body {
   background-image: url(/assets/images/fondo.jpg);
 }
 
-header {
-  color: #fff;
-  padding: 15px 70px;
-}
-
+/* Barra de navegación */
 nav {
+  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 80px;
 }
 
-.logo-container {
+.logoContainer {
   display: flex;
   align-items: center;
   float: left;
+  color: white;
+  margin-left: 30px;
 }
 
 .logo {
-  height: 80px;
-  margin-right: 5px;
+  width: 80px;
 }
 
-.site-name {
-  margin: 0;
-  font-size: 30px;
+.bar-btn {
+  cursor: pointer;
+  margin-right: 40px;
+  z-index: 2;
 }
 
-.nav-links,
-.links-form {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+.bar-btn img {
+  width: 40px;
 }
 
-.nav-links li,
-.links-form li {
-  margin: 0 10px;
+/* Menú de navegación (responsivo) */
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 0px;
+  background-color: #19283b;
+  text-align: left;
+  z-index: 1;
 }
 
-.nav-links a,
-.links-form a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  transition: 0.5s;
-}
-
-
-.nav-links a:hover {
+.nav-menu li {
   color: white;
+  font-size: 20px;
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.nav-menu li:hover {
   font-size: 30px;
   transition: 0.5s;
-  padding: 5px 15px;
-  border-radius: 15px;
 }
 
-.nav-links-container,
-.formulario {
-  display: flex;
-  justify-content: center;
-  width: auto;
+.nav-menu li a {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
+.nav-menu li a.active,
+.nav-menu li a:hover {
+  color: green;
+  transition: 0.3s;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .nav-menu {
+  height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+  display: block;
+}
+
+/* Información */
 .informacion {
   position: static;
   top: 15%;
@@ -90,7 +107,6 @@ nav {
 }
 
 .informacion p {
-  /* width: 480px; */
   width: 40%;
   margin-bottom: 50px;
   font-size: 20px;
@@ -99,7 +115,7 @@ nav {
 
 .informacion h1,
 .informacion .up {
-  width: 480px;
+  width: 200px;
   margin-bottom: 0px;
 }
 
@@ -113,14 +129,14 @@ nav {
 }
 
 .informacion .down {
-  width: 800px;
+  width: 550px;
   font-size: 100px;
   margin: 0px 0px 0px 0px;
   color: #83d7c1;
   transition: 0.5s;
 }
 
-
+/* Botones */
 .start {
   background-color: #83d7c1;
   color: #19283b;
@@ -131,12 +147,30 @@ nav {
   transition: 0.5s;
 }
 
-.start:hover{
+.start:hover {
   background-color: #19283b;
   color: #83d7c1;
   transition: 0.5s;
 }
 
+.register {
+  background-color: #19283b;
+  color: #83d7c1;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 30px;
+}
+
+.register:hover {
+  background-color: #83d7c1;
+  color: #19283b;
+  transition: 0.5s;
+}
+
+/* Imágenes */
 .imagenes {
   right: 10px;
   position: absolute;
@@ -148,11 +182,7 @@ nav {
   display: none;
 }
 
-.checkbtn{
-  height: 35px;
-  display: none;
-}
-
+/* Pie de página */
 footer {
   text-align: center;
   padding: 20px;
@@ -164,57 +194,59 @@ footer {
   color: white;
 }
 
+/* Estilos Responsivos */
 @media (max-width: 1000px) {
-  .site-name {
-    display: none;
-  }
-
-  
-  .nav-links{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: black;
-    top: 0;
-    left: -100%;
-  }
-
-  #check:checked ~ .nav-links{
-    left: 0;
-  }
-
-
-
-  
-  nav {
-    display: flex;
-    
-    height: auto;
-    
-  }
-
-  .informacion p{
+  .informacion p {
     width: 90%;
   }
 
-  .informacion h1{
+  .informacion h1 {
     font-size: 10px;
-    
   }
 
-  .informacion .up{
+  .informacion .up {
     font-size: 30px;
     transition: 0.5s;
   }
-  .informacion .down{
+
+  .informacion .down {
+    width: 400px;
     font-size: 60px;
     transition: 0.5s;
   }
+}
 
-  .checkbtn{
-    display: block;
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 50px;
   }
 
+  nav {
+    height: 100px;
+  }
 
+  .bar-btn {
+    display: none;
+  }
 
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+
+  .nav-menu li a {
+    font-size: 12px;
+  }
 }

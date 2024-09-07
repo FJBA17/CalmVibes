@@ -20,12 +20,13 @@ header {
 nav {
   position: fixed;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 80px;
   background-color: transparent;
   backdrop-filter: blur(5px);
+  z-index: 4;
 }
 
 .logo-container {
@@ -40,12 +41,9 @@ nav {
   margin-left: 70px;
 }
 
-/* .site-name {
-  margin: 0;
-  font-size: 25px;
-} */
+/* Título del Sitio */
 
-.site-name{
+.site-name {
   background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, white, transparent, transparent);
   -webkit-background-clip: text;
   background-clip: text;
@@ -63,6 +61,7 @@ nav {
     background-size: 300% 300%;
   }
 }
+
 @keyframes reveal {
   80% {
     letter-spacing: 8px;
@@ -71,25 +70,28 @@ nav {
     background-size: 300% 300%;
   }
 }
+
 @-webkit-keyframes glow {
   40% {
     text-shadow: 0 0 8px white;
   }
 }
+
 @keyframes glow {
   40% {
     text-shadow: 0 0 8px white;
   }
 }
 
-.search-container{
+/* Contenedor de búsqueda */
+
+.search-container {
   display: flex;
   float: left;
-  /* margin-left: 100px; */
   height: 35px;
 }
 
-.search-container input[type="text"]{
+.search-container input[type="text"] {
   width: 400px;
   border-radius: 10px;
   border: none;
@@ -99,7 +101,6 @@ nav {
 }
 
 .search-container input[type="text"]:focus {
-   /* Ajusta este valor según necesites */
   transition: 0.5s;
 }
 
@@ -112,22 +113,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
-  margin: 0;
   padding: 0;
-  
 }
 
 /* Menú lateral */
+
 .sidebar {
   position: fixed;
-
-  top: 70px; /* Para que quede justo debajo del navbar */
+  top: 70px;
   left: 0;
   width: 200px;
-  height: calc(100vh - 70px); /* Para que ocupe toda la altura de la ventana, restando el navbar */
-  background : transparent;
+  height: calc(100vh - 70px);
+  background: transparent;
   backdrop-filter: blur(5px);
   padding-top: 20px;
+  z-index: 3;
 }
 
 .sidebar ul {
@@ -147,11 +147,10 @@ body {
   align-items: center;
 }
 
-
 .sidebar ul li a img {
-  width: 30px; /* Ajusta el tamaño de la imagen según tu necesidad */
+  width: 30px;
   height: 30px;
-  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  margin-right: 10px;
 }
 
 .sidebar ul li a:hover {
@@ -161,35 +160,37 @@ body {
 }
 
 /* Contenido principal */
+
 .content {
-  margin-left: 220px; /* Para dejar espacio al menú lateral */
+  margin-left: 220px;
   padding: 70px;
+  width: 100px;
 }
 
 h1 {
   color: #333;
 }
+
 .user-info {
-  margin-left: auto; /* Empuja el contenido a la esquina derecha */
+  margin-left: auto;
   font-size: 14px;
   color: white;
 }
 
 #cerrarSesion {
-  background: none; /* Elimina el fondo del botón */
-  border: none; /* Elimina el borde del botón */
-  padding: 0; /* Elimina el relleno del botón */
-  cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
-  display: flex; /* Asegura que el botón se ajuste al tamaño de la imagen */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
   margin-right: 40px;
 }
 
 #cerrarSesion img {
-  display: block; /* Elimina el espacio adicional debajo de la imagen */
+  display: block;
   border: none;
-  width: 35px; /* Asegura que no haya borde alrededor de la imagen */
+  width: 35px;
 }
-
 
 @media (max-width: 1000px) {
   .site-name {
@@ -201,32 +202,33 @@ h1 {
     justify-content: center;
     align-items: center;
     height: auto;
-    justify-content: space-between;
   }
+
   .menu-text {
     display: none;
   }
 
-  .sidebar{
+  .sidebar {
     width: 60px;
   }
-  ul{
+
+  ul {
     padding: 0;
   }
 
   .content {
-    margin-left: 80px; /* Para dejar espacio al menú lateral */
+    margin-left: 50px;
     padding: 10px;
     padding-top: 70px;
   }
+
   .logo {
     height: 60px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
-  .search-container input[type="text"]{
+  .search-container input[type="text"] {
     width: 300px;
-    
   }
 }

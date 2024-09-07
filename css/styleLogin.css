@@ -1,17 +1,15 @@
 /* Reset some default styles */
-
-
-.alatsi-regular {
-  font-family: "Alatsi", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 * {
   font-family: Alatsi, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.alatsi-regular {
+  font-family: "Alatsi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Body styles */
@@ -24,11 +22,11 @@ body {
   height: 100vh;
 }
 
+/* Header styles */
 h1 {
   color: white;
   margin-bottom: 40px;
   text-align: center;
-
 }
 
 /* Container styles */
@@ -39,7 +37,6 @@ h1 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   max-width: 400px;
   width: 100%;
-  /* height: 350px; */
   justify-content: center;
   backdrop-filter: blur(10px);
   border: 1px solid #83d7c1;
@@ -89,7 +86,7 @@ button[type="submit"] {
   transition: 0.5s;
 }
 
-button:hover{
+button:hover {
   background-color: #19283b;
   color: #83d7c1;
   transition: 0.5s;
@@ -97,33 +94,27 @@ button:hover{
 
 .back-button {
   position: absolute;
-  top: 20px;
-  /* Ajusta la distancia desde la parte superior */
-  left: 50px;
-  /* Ajusta la distancia desde la izquierda */
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  left: 50px; /* Ajusta la distancia desde la izquierda */
   cursor: pointer;
-  width: 50px;
-  /* Ajusta el tamaño de la imagen */
+  width: 50px; /* Ajusta el tamaño de la imagen */
   height: auto;
 }
 
-.sinCuenta{
+.sinCuenta {
   color: white;
   padding-bottom: 10px;
   transition: 0.5s;
-  
 }
 
-.sinCuenta:hover{
-  text-shadow: rgba(131,215,193,0.9) 0px 0px 18px;
+.sinCuenta:hover {
+  text-shadow: rgba(131, 215, 193, 0.9) 0px 0px 18px;
   transition: 0.5s;
 }
 
+/* Responsive styles */
 @media (max-width: 1000px) {
-  
-  .back-button{
+  .back-button {
     display: none;
   }
-  
 }
-

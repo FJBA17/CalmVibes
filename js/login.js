@@ -12,13 +12,13 @@ function validateLogin() {
 
   // Validar credenciales
   if (username === storedUsername && password === storedPassword) {
-      alert('Login successful');
+      alert('Inicio Exitoso');
       // Redirigir a la página de inicio
       window.location.href = '../html/inicio.html';
       return false; // Previene el envío del formulario, ya que manejamos la redirección manualmente
   } else {
       errorMessage.style.display = 'block';
-      errorMessage.textContent = 'Invalid username or password';
+      errorMessage.textContent = 'Usuario o Contraseña Invalido';
       return false; // Previene el envío del formulario
   }
 }
