@@ -25,7 +25,7 @@ Claro, aquí tienes una descripción breve de cada una de las 7 funcionalidades 
    Los usuarios pueden subir su propio contenido audiovisual a la plataforma utilizando un botón específico para esta acción. Esto les permite compartir sus canciones y videos con otros usuarios, enriqueciendo la biblioteca de contenido disponible en CalmVibes.
 
 ## Tecnologías Usadas
-HTML
+HTML (https://img.icons8.com/?size=100&id=20909&format=png&color=000000)
 CSS
 JavaScript
 JSON
