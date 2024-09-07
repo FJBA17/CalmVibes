@@ -3,7 +3,7 @@
 CalmVibes es una innovadora aplicación web diseñada para ofrecer una experiencia de música y video personalizada que se centra en el bienestar y la relajación del usuario. La plataforma permite a los usuarios explorar, crear y gestionar listas de reproducción, así como descubrir contenido multimedia que fomente una atmósfera tranquila y positiva.
 
 ## Uso
-Iniciar web desde archivo externo home.html
+Iniciar web desde archivo home.html con Open with Live Server
 
 ## Análisis de las Funcionalidades
 
