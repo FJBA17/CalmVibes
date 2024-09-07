@@ -45,4 +45,21 @@
   .delete-btn:hover {
     background-color: darkred;
   }
+
+  .add-playlist-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #56978d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-playlist-btn:hover {
+    background-color: #356a62;
+}
   
