@@ -26,7 +26,6 @@ Claro, aquí tienes una descripción breve de cada una de las 7 funcionalidades 
 
 ## Tecnologías Usadas
 ![HTML](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=white&color=orange)
-
-CSS
-JavaScript
-JSON
+![CSS](https://img.shields.io/badge/CSS-blue?logo=css3&logoColor=white&color=blue)
+![JAVASCRIPT](https://img.shields.io/badge/JavaScript-black?logo=javascript&logoColor=black&color=yellow)
+![JSON](https://img.shields.io/badge/JSON-black?logo=json&logoColor=white&color=black)
