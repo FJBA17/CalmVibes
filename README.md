@@ -22,6 +22,8 @@ CalmVibes es una innovadora aplicación web diseñada para ofrecer una experienc
 6. **Botón de Subir Contenido**:
    Los usuarios pueden subir su propio contenido audiovisual a la plataforma utilizando un botón específico para esta acción. Esto les permite compartir sus canciones y videos con otros usuarios, enriqueciendo la biblioteca de contenido disponible en CalmVibes.
 
+## Prototipado Figma
+
 ## Tecnologías Usadas
 ![HTML](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=white&color=orange)
 ![CSS](https://img.shields.io/badge/CSS-blue?logo=css3&logoColor=white&color=blue)
