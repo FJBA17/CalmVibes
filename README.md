@@ -25,6 +25,9 @@ Iniciar web desde archivo home.html con Open with Live Server
 6. **Botón de Subir Contenido**:
    Los usuarios pueden subir su propio contenido audiovisual a la plataforma utilizando un botón específico para esta acción. Esto les permite compartir sus canciones y videos con otros usuarios, enriqueciendo la biblioteca de contenido disponible en CalmVibes.
 
+7. **Recomendaciones**
+   Esta funcionalidad sugiere contenido en función de las preferencias y actividad del usuario, como los videos y canciones que le han gustado o añadido a su lista de reproducción.
+
 ## Prototipado Figma
 
 ## Tecnologías Usadas
