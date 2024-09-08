@@ -29,6 +29,7 @@ Iniciar web desde archivo home.html con Open with Live Server
    Esta funcionalidad sugiere contenido en función de las preferencias y actividad del usuario, como los videos y canciones que le han gustado o añadido a su lista de reproducción.
 
 ## Prototipado Figma
+https://www.figma.com/design/rUPvPeC7gHzdwh5g8NRIgr/Reproductor-en-Primer-Plano?node-id=0-1&m=dev
 
 ## Tecnologías Usadas
 ![HTML](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=white&color=orange)
