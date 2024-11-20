@@ -1,0 +1,97 @@
+/* Centrar el contenido de la página en el medio */
+.ion-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Fondo claro para resaltar el formulario */
+  }
+  
+  /* Estilos para el contenedor del formulario */
+  .ion-content {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Sombra para resaltar el contenedor */
+  }
+  
+  /* Estilos para los elementos del formulario */
+  .ion-item {
+    --padding-start: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .ion-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Input y select con borde redondeado y colores */
+  .ion-input,
+  .ion-select {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 100%;
+  }
+  
+  /* Botón de registrar */
+  .ion-button {
+    margin-top: 20px;
+    --background: #26a69a;
+    --color: white;
+    --border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .ion-text {
+    font-size: 14px;
+    color: #e53935;
+    text-align: center;
+  }
+  
+  /* Alinear el checkbox y su etiqueta */
+  .ion-item-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .ion-checkbox {
+    margin-right: 10px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .ion-content {
+      max-width: 90%;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ion-label {
+      font-size: 13px;
+    }
+  
+    .ion-input,
+    .ion-select {
+      font-size: 14px;
+    }
+  
+    .ion-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

@@ -1,0 +1,7 @@
+{
+  "name": "CalmVibesEP2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

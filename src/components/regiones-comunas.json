@@ -1,0 +1,13 @@
+{
+    "regiones": [
+      {
+        "nombre": "Región de Valparaíso",
+        "comunas": ["Valparaíso", "Viña del Mar", "Quilpué", "Villa Alemana", "Los Andes"]
+      },
+      {
+        "nombre": "Región Metropolitana",
+        "comunas": ["Santiago", "Providencia", "Las Condes", "Maipú", "Puente Alto"]
+      }
+    ]
+  }
+  
