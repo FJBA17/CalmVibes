@@ -1,4 +1,5 @@
-CalmVibes
+*CalmVibes*
+
 CalmVibes es una innovadora plataforma web diseñada para ofrecer una experiencia de música y video personalizada que fomenta el bienestar y la relajación del usuario. Los usuarios pueden explorar, crear y gestionar listas de reproducción con música relajante, además de subir y gestionar su propio contenido.
 
 Configuración de la base de datos
