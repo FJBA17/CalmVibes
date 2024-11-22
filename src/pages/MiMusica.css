@@ -1,118 +1,110 @@
-/* Contenedor principal */
 .mi-musica {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    /* background-color: #f4f9f4; */
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Contenedor de música */
-  .musica-container {
-    width: 100%;
-    max-width: 800px; /* Limitamos el ancho del contenedor */
-    padding: 20px;
-    background-color: #ffffff11;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-top: 30px;
-    overflow: hidden; /* Esconde cualquier cosa fuera del área visible */
-  }
-  
-  h1 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Formulario para subir archivos */
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  input[type="file"] {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-    color: black;
-  }
-  
-  button {
-    background-color: #60a0b8;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #45a09e;
-  }
-  
-  /* Contenedor para la lista de música */
-  .lista-musica {
-    display: flex;
-    flex-wrap: wrap; /* Los elementos se ajustan si no caben en una fila */
-    justify-content: space-around; /* Los elementos se distribuyen de manera uniforme */
-    gap: 20px; /* Espacio entre los cuadros */
-    max-height: 500px; /* Limitar la altura máxima del contenedor */
-    overflow-y: auto; /* Hacer que el contenedor tenga scroll vertical si hay demasiados archivos */
-    padding-right: 10px; /* Espacio a la derecha para que el scroll no esté pegado */
-  }
-  
-  /* Cada cuadro verde para la música */
-  .archivo-item {
-    width: 300px; /* Ancho fijo de cada cuadro */
-    padding: 20px;
-    background-color: #19283b; /* Fondo verde */
-    color: white;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .archivo-item p {
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
-  
-  audio {
-    width: 100%; /* Hace que el reproductor ocupe todo el ancho del cuadro */
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  /* Añadir estilo al botón de eliminar (si fuera necesario en el futuro) */
-  .delete-button {
-    background-color: #e53935;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-  
-  .delete-button:hover {
-    background-color: #d32f2f;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
 
-  h2{
-    color: white;
-  }
-  
+.musica-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff11;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  color: black;
+}
+
+button {
+  background-color: #60a0b8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a09e;
+}
+
+.lista-musica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.archivo-item {
+  width: 300px;
+  padding: 20px;
+  background-color: #19283b;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.archivo-item p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+audio {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.delete-button {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+h2 {
+  color: white;
+}

@@ -1,35 +1,30 @@
-/* Estilos para la página Principal */
-
 .principal-page {
-    /* padding-top: 70px;  */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 0;
-}
-
-.principal-container {
+  }
+  
+  .principal-container {
     width: 100%;
     max-width: 800px;
     padding: 20px;
-    margin-top: 20px;
-}
-
-h1 {
+    margin-top: 70px; /* Ajustar el margen para dar espacio al Navbar */
+  }
+  
+  h1 {
     text-align: center;
     color: #ffffff;
     margin-bottom: 20px;
-}
-
-.principal-music-list {
+  }
+  
+  .principal-music-list {
     display: flex;
-    
     gap: 20px;
     justify-content: center;
-    /* Centra los elementos horizontalmente */
-}
-
-.music-item {
+  }
+  
+  .music-item {
     background-color: #19283b;
     color: white;
     padding: 35px;
@@ -38,23 +33,22 @@ h1 {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    
-}
-
-.music-item p {
+  }
+  
+  .music-item p {
     margin: 0;
     font-weight: bold;
     font-size: 16px;
     width: 100%;
-}
-
-.music-item audio {
+  }
+  
+  .music-item audio {
     margin-top: 10px;
     width: 100%;
     height: 25px;
-}
-
-.music-item button {
+  }
+  
+  .music-item button {
     margin-top: 10px;
     padding: 8px 12px;
     border: none;
@@ -64,32 +58,27 @@ h1 {
     font-size: 14px;
     width: 50%;
     background-color: #60a0b8;
-}
-
-.music-item button:nth-child(2) {
-    background-color: #0d176b;
-    /* Favoritos */
-}
-
-.music-item button:nth-child(3) {
+  }
+  
+  .music-item button:nth-child(2) {
+    background-color: #0d176b; /* Favoritos */
+  }
+  
+  .music-item button:nth-child(3) {
     background-color: #83d7c1;
-    color: #19283b;
-    /* Like */
-}
-
-.music-item button:nth-child(4) {
+    color: #19283b; /* Like */
+  }
+  
+  .music-item button:nth-child(4) {
     background-color: #f9f9f9;
-    color: #19283b;
-    /* Dislike */
-}
-
-/* Efecto hover para los botones */
-.music-item button:hover {
+    color: #19283b; /* Dislike */
+  }
+  
+  .music-item button:hover {
     opacity: 0.9;
-}
-
-/* Asegurar que el navbar no sea cubierto */
-body {
+  }
+  
+  body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -97,24 +86,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.principal-page .principal-container {
-    margin-top: 70px;
-    /* Ajustar el margen para dar espacio al Navbar */
-}
-
-.Subir{
+  }
+  
+  .Subir {
     background-color: #83d7c1;
     color: #19283b;
-}
-
-.Subir:hover{
+  }
+  
+  .Subir:hover {
     background-color: #19283b;
     color: #83d7c1;
-
-}
-
-.music-item button:hover{
-    opacity: 0.9;
-}
+  }
+  

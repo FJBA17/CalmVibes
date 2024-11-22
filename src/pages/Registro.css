@@ -1,12 +1,10 @@
-/* Registro.css */
-/* Registro.css */
 .registro-page {
   --background: none;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: auto; /* Add this to handle potential overflow */
+  overflow: auto; 
 }
 
 .registro-content {
@@ -15,7 +13,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* Changed from 100% to 100vh */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +29,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-style: solid;
   border-color: aquamarine;
-  margin: auto; /* Add this to ensure container is centered */
+  margin: auto;
 }
 
 .registro-form {

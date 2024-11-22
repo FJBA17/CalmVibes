@@ -1,14 +1,13 @@
 @font-face {
-  font-family: 'MiFuentePersonalizada'; /* Nombre de la fuente */
-  src: url('../font/MerriweatherSans-Regular.ttf') format('truetype'); /* Ruta y formato */
-  font-weight: normal; /* Opcional: peso de la fuente */
-  font-style: normal;  /* Opcional: estilo de la fuente */
+  font-family: 'MiFuentePersonalizada';
+  src: url('../font/MerriweatherSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-*{
+* {
   font-family: 'MiFuentePersonalizada', sans-serif;
 }
-
 
 .body {
   background-image: url(/src/images/fondo.jpg);
@@ -28,12 +27,7 @@
 
 .toolbar-container {
   background-color: transparent !important;
-  /* Forzar la aplicación */
-
 }
-
-
-
 
 .logo {
   font-size: 1.5rem;
@@ -42,15 +36,11 @@
 }
 
 .button-container {
-
   margin-top: 20px;
   display: flex;
-
   gap: 30px;
-  /* Espacio entre los botones */
   width: 100%;
   max-width: 300px;
-  /* Ancho máximo de los botones */
   box-shadow: none;
 }
 
@@ -87,7 +77,6 @@ p {
   height: 50px;
   box-shadow: none;
   transition: 0.5s;
-
 }
 
 .register:hover {

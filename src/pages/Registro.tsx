@@ -160,9 +160,7 @@ const Registro: React.FC = () => {
   return (
     <IonPage className="registro-page">
       <IonHeader>
-        {/* <IonToolbar>
-          <IonTitle>Registro</IonTitle>
-        </IonToolbar> */}
+        
       </IonHeader>
       <IonContent className="ion-padding registro-content">
         <div className="registro-container">

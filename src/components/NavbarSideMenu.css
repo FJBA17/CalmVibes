@@ -1,25 +1,18 @@
-/* Principal.css */
-
 .main-container {
   display: flex;
   height: 100%;
   width: 100%;
 }
 
-
-/* Menú Lateral */
 .side-menu {
   width: 250px;
-  /* Ancho del menú lateral */
   background-color: #94080800;
   padding-top: 45px;
-  position: fixed;
   padding-left: 40px;
-  /* Fijo al lado izquierdo */
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  /* border-right: 1px solid #ddd; */
 }
 
 .side-menu ul {
@@ -30,7 +23,6 @@
 
 .side-menu li {
   padding: 20px;
-  /* border-bottom: 1px solid #ddd; */
   cursor: pointer;
   color: black;
 }
@@ -41,23 +33,21 @@
   color: black;
 }
 
-/* Contenido Principal */
 .content {
   margin-left: 250px;
-  /* Ajusta el contenido para que no se solape con el menú */
   padding: 20px;
   width: calc(100% - 250px);
-  /* Resta el ancho del menú */
 }
 
 .content h2 {
   margin-top: 20px;
 }
 
-.nav{
+.nav {
   background-color: black;
 }
+
 ion-router-link {
   text-decoration: none;
-  color: #ffffff; /* Cambia a cualquier color que desees */
+  color: #ffffff;
 }
