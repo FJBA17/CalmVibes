@@ -1,77 +1,104 @@
-import React, { useState } from 'react';
-import './Principal.css'; // Asegúrate de tener un archivo CSS para estilos
+import React, { useState, useEffect } from 'react';
+import NavbarSideMenu from '../components/NavbarSideMenu';
+import './Principal.css';
 
 const Principal: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [archivos, setArchivos] = useState<string[]>([]);
+  const [archivoSeleccionado, setArchivoSeleccionado] = useState<File | null>(null);
+  const [favoritos, setFavoritos] = useState<string[]>([]);
 
-  const handleCardClick = () => {
-    setIsModalOpen(true); // Abre el modal
+  useEffect(() => {
+    obtenerArchivos();
+    obtenerFavoritos();
+  }, []);
+
+  // Obtener la lista de archivos de música del servidor
+  const obtenerArchivos = async () => {
+    try {
+      const response = await fetch('http://localhost:3002/uploads-principal');
+      const data = await response.json();
+      setArchivos(data);
+    } catch (error) {
+      console.error('Error al obtener archivos:', error);
+    }
   };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false); // Cierra el modal
+  // Obtener favoritos desde localStorage
+  const obtenerFavoritos = () => {
+    const favoritosGuardados = JSON.parse(localStorage.getItem('favoritos-principal') || '[]');
+    setFavoritos(favoritosGuardados);
   };
 
-  const handleLike = () => {
-    alert('¡Te gusta!');
+  // Manejar subida de archivos para Principal
+  const manejarSubida = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!archivoSeleccionado) return;
+
+    const formData = new FormData();
+    formData.append('file', archivoSeleccionado);
+
+    try {
+      const response = await fetch('http://localhost:3002/upload-principal', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        alert('Archivo subido correctamente a Principal');
+        obtenerArchivos();
+      }
+    } catch (error) {
+      console.error('Error al subir archivo:', error);
+      alert('Error al subir archivo');
+    }
   };
 
-  const handleDislike = () => {
-    alert('¡No te gusta!');
+  // Agregar a favoritos
+  const agregarAFavoritos = (archivo: string) => {
+    const nuevosFavoritos = [...favoritos, archivo];
+    setFavoritos(nuevosFavoritos);
+    localStorage.setItem('favoritos', JSON.stringify(nuevosFavoritos)); 
+    alert(`"${archivo}" añadido a favoritos`);// Guardar en localStorage
   };
-
-  const handleFavorite = () => {
-    alert('Agregado a favoritos');
+  
+  // Función para manejar Like y Dislike
+  const manejarLike = (tipo: string) => {
+    alert(`Has dado ${tipo === 'like' ? 'un like' : 'un dislike'}`);
   };
 
   return (
     <div className="principal-page">
-      <nav className="navbar">
-        <div className="navbar-title">CalmVibes</div>
-        <div className="search-container">
-          <input type="text" className="search-input" placeholder="Buscar..." />
-        </div>
-      </nav>
-      <div className="layout">
-        <aside className="sidebar">
-          <ul className="menu">
-            <li>Principal</li>
-            <li>Explorar</li>
-            <li>My Playlist</li>
-            <li>Ejercicios</li>
-            <li>Tips</li>
-            <li>Subir Contenido</li>
-          </ul>
-        </aside>
-        <div className="content">
-          <h1>Bienvenido a CalmVibes</h1>
-          <div className="song-card" onClick={handleCardClick}>
-            <h2 className="song-title">Nombre Canción</h2>
-            <p className="artist-name">Nombre Artista</p>
-          </div>
+      <NavbarSideMenu />
+      <div className="principal-container">
+        <h1>Principal</h1>
+
+        {/* Formulario para subir archivos */}
+        {/* <form onSubmit={manejarSubida}>
+          <input
+            type="file"
+            accept="audio/*"
+            onChange={(e) => setArchivoSeleccionado(e.target.files?.[0] || null)}
+          />
+          <button type="submit" className='Subir'>Subir Música</button>
+        </form> */}
+
+        {/* Lista de música */}
+        <div className="principal-music-list">
+          {archivos.map((archivo, index) => (
+            <div className="music-item" key={index}>
+              <p>{archivo}</p>
+              <audio controls>
+                <source src={`http://localhost:3002/uploads-principal/${archivo}`} type="audio/mpeg" />
+                Tu navegador no soporta el reproductor de audio.
+              </audio>
+              <button onClick={() => agregarAFavoritos(archivo)}>Favorito</button>
+              <button onClick={() => manejarLike('like')}>Like</button>
+              <button onClick={() => manejarLike('dislike')}>Dislike</button>
+            </div>
+          ))}
         </div>
       </div>
-
-      {isModalOpen && (
-        <div className="modal" onClick={handleCloseModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <h2>Este es el contenido del modal</h2>
-            <p>Puedes agregar más información aquí.</p>
-            
-          </div>
-          {/* Reproductor de música al final del modal */}
-          <div className="music-player">
-              <button className="control-btn">⏪</button>
-              <button className="control-btn">▶️</button>
-              <button className="control-btn">⏩</button>
-              <input type="range" className="progress-bar" />
-              <button className="like-btn" onClick={handleLike}>👍</button>
-              <button className="dislike-btn" onClick={handleDislike}>👎</button>
-              <button className="favorite-btn" onClick={handleFavorite}>❤️</button>
-              <button className="volume-btn">🔊</button>
-            </div>
-        </div>
-      )}
     </div>
   );
 };

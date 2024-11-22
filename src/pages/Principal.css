@@ -1,167 +1,120 @@
-/* Principal.css */
+/* Estilos para la página Principal */
 
 .principal-page {
+    /* padding-top: 70px;  */
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-  }
-  
-  .navbar {
-    display: flex;
     align-items: center;
-    justify-content: space-between; /* Espaciado entre título y barra de búsqueda */
-    padding: 10px 20px;
-    background-color: #4a90e2; /* Color de fondo del navbar */
-    color: white; /* Color del texto */
-  }
-  
-  .navbar-title {
-    font-size: 24px; /* Tamaño de la fuente del título */
-  }
-  
-  .search-container {
-    flex: 1; /* Ocupar el espacio restante */
+    margin-top: 0;
+}
+
+.principal-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.principal-music-list {
     display: flex;
-    justify-content: center; /* Centrar la barra de búsqueda */
-  }
-  
-  .search-input {
-    width: 70%; /* Ancho de la barra de búsqueda */
-    padding: 10px;
+    
+    gap: 20px;
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+}
+
+.music-item {
+    background-color: #19283b;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+}
+
+.music-item p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+}
+
+.music-item audio {
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+}
+
+.music-item button {
+    margin-top: 10px;
+    padding: 8px 12px;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .layout {
-    display: flex;
-    flex-grow: 1; /* Permite que el layout ocupe el espacio restante */
-  }
-  
-  .sidebar {
-    width: 200px; /* Ancho del menú lateral */
-    background-color: #f4f4f4; /* Color de fondo del menú lateral */
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu {
-    list-style: none; /* Eliminar puntos de la lista */
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    width: 50%;
+    background-color: #60a0b8;
+}
+
+.music-item button:nth-child(2) {
+    background-color: #0d176b;
+    /* Favoritos */
+}
+
+.music-item button:nth-child(3) {
+    background-color: #83d7c1;
+    color: #19283b;
+    /* Like */
+}
+
+.music-item button:nth-child(4) {
+    background-color: #f9f9f9;
+    color: #19283b;
+    /* Dislike */
+}
+
+/* Efecto hover para los botones */
+.music-item button:hover {
+    opacity: 0.9;
+}
+
+/* Asegurar que el navbar no sea cubierto */
+body {
+    margin: 0;
     padding: 0;
-  }
-  
-  .menu li {
-    margin: 15px 0; /* Espaciado entre los elementos del menú */
-    cursor: pointer; /* Cambia el cursor al pasar sobre los elementos */
-    color: #333; /* Color del texto */
-  }
-  
-  .menu li:hover {
-    color: #4a90e2; /* Color al pasar el mouse sobre los elementos */
-  }
-  
-  .content {
-    padding: 20px;
-    flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
-  }
-  
-  .song-card {
-    background-color: #4caf50; /* Color verde */
-    color: white; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
-    margin-top: 20px; /* Espaciado superior */
-    text-align: center; /* Centrar el texto */
-  }
-  
-  .song-title {
-    font-size: 20px; /* Tamaño de la fuente del título de la canción */
-    margin: 0; /* Eliminar margen */
-  }
-  
-  .artist-name {
-    font-size: 16px; /* Tamaño de la fuente del nombre del artista */
-    margin: 5px 0 0 0; /* Espaciado superior */
-  }
+    box-sizing: border-box;
+    background-image: url(../images/fondoInicio2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-  /* Principal.css */
+.principal-page .principal-container {
+    margin-top: 70px;
+    /* Ajustar el margen para dar espacio al Navbar */
+}
 
-/* ... (el resto de tu CSS existente) ... */
+.Subir{
+    background-color: #83d7c1;
+    color: #19283b;
+}
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.9); /* Color rojo semitransparente */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Asegúrate de que el modal esté en la parte superior */
-  }
-  
-  .modal-content {
-    background-color: white; /* Color de fondo del cuadro del modal */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center; /* Centrar el texto */
-  }
+.Subir:hover{
+    background-color: #19283b;
+    color: #83d7c1;
 
-  /* Principal.css */
+}
 
-/* ... (el resto de tu CSS existente) ... */
-
-/* Principal.css */
-
-/* ... (el resto de tu CSS existente) ... */
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.9); /* Color rojo semitransparente */
-    display: flex;
-    flex-direction: column; /* Organiza el contenido verticalmente */
-    justify-content: flex-start; /* Al inicio de la pantalla */
-    z-index: 1000; /* Asegúrate de que el modal esté en la parte superior */
-  }
-  
-  .modal-content {
-    flex-grow: 1; /* Permite que el contenido crezca */
-    padding: 20px;
-    text-align: center; /* Centrar el texto */
-  }
-  
-  .music-player {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Espaciado entre los controles */
-    background-color: white; /* Fondo blanco para el reproductor */
-    padding: 10px; /* Espaciado interno */
-    border-top: 1px solid #ccc; /* Línea separadora */
-    width: 100%;
-  }
-  
-  .control-btn {
-    background: none;
-    border: none;
-    font-size: 24px; /* Tamaño de los botones de control */
-    cursor: pointer;
-  }
-  
-  .progress-bar {
-    flex-grow: 1; /* Ocupa el espacio restante */
-    margin: 0 10px; /* Espaciado horizontal */
-  }
-  
-  .like-btn, .dislike-btn, .favorite-btn, .volume-btn {
-    background: none;
-    border: none;
-    font-size: 24px; /* Tamaño de los botones */
-    cursor: pointer;
-  }
-  
+.music-item button:hover{
+    opacity: 0.9;
+}

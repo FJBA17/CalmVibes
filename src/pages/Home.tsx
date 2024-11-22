@@ -1,23 +1,62 @@
 import React from 'react';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/react';
-import { useHistory } from 'react-router-dom';
+import './Home.css'; // Asegúrate de tener este archivo para los estilos
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonToolbar,
+  IonButtons,
+  IonButton,
+  IonTitle,
+} from '@ionic/react';
 
 const Home: React.FC = () => {
-    const history = useHistory();
+  return (
+    <IonPage className='body'>
+      {/* Navbar */}
+      <IonHeader>
+        <IonToolbar className="toolbar-container" color='white'>
+          <IonTitle slot="start" className="logo">CalmVibes</IonTitle>
+          <IonButtons slot="end">
+            <IonButton routerLink="/inicio">Inicio</IonButton>
+            <IonButton routerLink="/acerca">Acerca</IonButton>
+            <IonButton routerLink="/servicios">Servicios</IonButton>
+            <IonButton routerLink="/contacto">Contacto</IonButton>
+          </IonButtons>
+        </IonToolbar>
+      </IonHeader>
 
-    return (
-        <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                    <IonTitle>Home</IonTitle>
-                </IonToolbar>
-            </IonHeader>
-            <IonContent className="ion-padding">
-                <IonButton expand="block" onClick={() => history.push('/login')}>Inicio de Sesión</IonButton>
-                <IonButton expand="block" onClick={() => history.push('/registro')}>Registro</IonButton>
-            </IonContent>
-        </IonPage>
-    );
+
+
+      {/* Contenido */}
+      <IonContent>
+        <div className="home-container">
+          <h1 className='titulo'>Transforma tu Bienestar</h1>
+          <p>Descubre una nueva forma de cuidar tu salud y relajación con
+                    CalmVibes. Nuestra aplicación te permite crear playlists
+                    personalizadas que se adaptan a tus momentos de calma,
+                    explorar
+                    ejercicios guiados para meditación y estiramientos, y
+                    recibir
+                    consejos diarios diseñados para mejorar tu bienestar
+                    general.
+                    Con CalmVibes, cada día es una oportunidad para encontrar
+                    equilibrio y serenidad. Únete a nosotros y empieza tu viaje
+                    hacia una vida más tranquila y saludable.</p>
+
+          {/* Botones de Inicio de Sesión y Registro */}
+          <div className="button-container">
+            <IonButton className='login' expand="block" color="white"  routerLink="/login">
+              Inicio de Sesión
+            </IonButton>
+            <IonButton className='register' expand="block" color="none" routerLink="/registro">
+              Registro
+            </IonButton>
+          </div>
+        </div>
+      </IonContent>
+    </IonPage>
+  );
 };
 
 export default Home;

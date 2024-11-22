@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'CalmVibesEP2',
+  appName: 'CalmVibesV2',
   webDir: 'dist'
 };
 

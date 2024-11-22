@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'MiFuentePersonalizada'; /* Nombre de la fuente */
+  src: url('../font/MerriweatherSans-Regular.ttf') format('truetype'); /* Ruta y formato */
+  font-weight: normal; /* Opcional: peso de la fuente */
+  font-style: normal;  /* Opcional: estilo de la fuente */
+}
+
+*{
+  font-family: 'MiFuentePersonalizada', sans-serif;
+}
+
+
+/* LoginBackground.css */
+.login-page {
+  --background: none;
+  background-image: url('../images/fondo.jpg');
+}
+
+.login-content {
+  --background: none;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.099);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  margin: 250px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.271);
+  border-style: solid;
+  border-color: aquamarine;
+}
+
+.ion-button {
+  margin-top: 20px;
+  background-color: #19283b;
+  border-radius: 15px;
+  color: #83d7c1;
+  transition: 0.5s;
+}
+
+.ion-button:hover{
+  color: #19283b;
+  background-color: #83d7c1;
+  transition: 0.5s;
+}
+
+ion-item {
+  margin-bottom: 0px;
+  --background: rgba(255, 255, 255, 0.866);
+  --border-radius: 15px;
+  height: 60px;
+  
+}
+
+h1{
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+
+.label{
+  color: white;
+  margin-bottom: 80px;
+}

@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'MiFuentePersonalizada'; /* Nombre de la fuente */
+  src: url('../font/MerriweatherSans-Regular.ttf') format('truetype'); /* Ruta y formato */
+  font-weight: normal; /* Opcional: peso de la fuente */
+  font-style: normal;  /* Opcional: estilo de la fuente */
+}
+
+*{
+  font-family: 'MiFuentePersonalizada', sans-serif;
+}
+
+
+.body {
+  background-image: url(/src/images/fondo.jpg);
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url(/src/images/fondo.jpg);
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.toolbar-container {
+  background-color: transparent !important;
+  /* Forzar la aplicación */
+
+}
+
+
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.button-container {
+
+  margin-top: 20px;
+  display: flex;
+
+  gap: 30px;
+  /* Espacio entre los botones */
+  width: 100%;
+  max-width: 300px;
+  /* Ancho máximo de los botones */
+  box-shadow: none;
+}
+
+p {
+  width: 50%;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 50px;
+}
+
+.login {
+  background-color: #83d7c1;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  box-shadow: none;
+  color: #19283b;
+  transition: 0.5s;
+}
+
+.login:hover {
+  background-color: #19283b;
+  color: #83d7c1;
+  transition: 0.5s;
+}
+
+.register {
+  background-color: #19283b;
+  color: #83d7c1;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  box-shadow: none;
+  transition: 0.5s;
+
+}
+
+.register:hover {
+  background-color: #83d7c1;
+  color: #19283b;
+  transition: 0.5s;
+}
+
+.button-native {
+  box-shadow: none;
+}

@@ -1,0 +1,53 @@
+.mi-perfil {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Ajuste para el contenedor principal del perfil, asegurando que no se solape con el side menu */
+  .perfil-container {
+    padding: 20px;
+    flex-grow: 1;
+    /* background-color: #f4f4f4; */
+    margin-left: 220px; /* Añadido margen izquierdo para evitar que el contenido quede tapado por el side menu */
+  }
+  
+  /* Estilo del área de información del perfil */
+  .perfil-info {
+    background-color: rgba(255, 255, 255, 0.126);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Estilo de cada elemento de información */
+  .info-item {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .info-item strong {
+    font-weight: bold;
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Asegúrate de que la fuente sea consistente */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo para los elementos cuando no hay usuario autenticado */
+  .mi-perfil p {
+    text-align: center;
+    font-size: 18px;
+    color: #e71300;
+  }
+  
